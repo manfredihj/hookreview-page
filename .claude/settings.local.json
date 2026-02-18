@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm run build:*)",
+      "Bash(dir /B appblog)",
+      "Bash(del \"c:\\workspace-node\\hookflow-landing-page\\components\\sections\\SimplePricing.tsx\")",
+      "Bash(dir:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
