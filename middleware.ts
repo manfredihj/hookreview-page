@@ -1,27 +1,42 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import { countryToLocale, defaultLocale, isValidLocale, type Locale } from '@/lib/i18n/config';
+import { locales, countryToLocale, defaultLocale, isValidLocale, type Locale } from '@/lib/i18n/config';
 
 export function middleware(request: NextRequest) {
-  const response = NextResponse.next();
+  const { pathname } = request.nextUrl;
 
-  // Check if user already has a locale preference
-  const existingLocale = request.cookies.get('locale')?.value;
-  if (existingLocale && isValidLocale(existingLocale)) {
-    return response;
+  // Check if pathname already has a locale prefix
+  const pathnameHasLocale = locales.some(
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+  );
+
+  if (pathnameHasLocale) {
+    return NextResponse.next();
   }
 
-  // Try to detect country from headers (Vercel, Cloudflare, etc.)
-  const country =
-    request.headers.get('x-vercel-ip-country') ||
-    request.headers.get('cf-ipcountry') ||
-    '';
+  // Detect locale from cookie or IP
+  let locale: Locale = defaultLocale;
 
-  // Map country to locale
-  const detectedLocale: Locale = countryToLocale[country] || defaultLocale;
+  const cookieLocale = request.cookies.get('locale')?.value;
+  if (cookieLocale && isValidLocale(cookieLocale)) {
+    locale = cookieLocale;
+  } else {
+    // Try to detect country from headers (Vercel, Cloudflare, etc.)
+    const country =
+      request.headers.get('x-vercel-ip-country') ||
+      request.headers.get('cf-ipcountry') ||
+      '';
+    locale = countryToLocale[country] || defaultLocale;
+  }
 
-  // Set locale cookie (expires in 1 year)
-  response.cookies.set('locale', detectedLocale, {
+  // Redirect to locale-prefixed URL
+  const url = request.nextUrl.clone();
+  url.pathname = `/${locale}${pathname}`;
+
+  const response = NextResponse.redirect(url);
+
+  // Set locale cookie for future visits
+  response.cookies.set('locale', locale, {
     path: '/',
     maxAge: 60 * 60 * 24 * 365, // 1 year
     sameSite: 'lax',
@@ -32,7 +47,7 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Match all paths except static files and api routes
-    '/((?!_next/static|_next/image|favicon.ico|.*\\..*|api).*)',
+    // Match all paths except static files, api routes, and special Next.js paths
+    '/((?!_next/static|_next/image|favicon.ico|.*\\..*|api|sitemap.xml).*)',
   ],
 };

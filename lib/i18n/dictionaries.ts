@@ -1,9 +1,9 @@
 import { Locale } from './config';
 
 const dictionaries = {
+  'ar': () => import('@/locales/ar.json').then((module) => module.default),
+  'mx': () => import('@/locales/mx.json').then((module) => module.default),
   'en': () => import('@/locales/en.json').then((module) => module.default),
-  'es-AR': () => import('@/locales/es-AR.json').then((module) => module.default),
-  'es-MX': () => import('@/locales/es-MX.json').then((module) => module.default),
 };
 
 export type Dictionary = Awaited<ReturnType<typeof getDictionary>>;

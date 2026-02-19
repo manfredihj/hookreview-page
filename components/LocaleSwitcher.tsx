@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { locales, localeNames, localeFlags, type Locale } from "@/lib/i18n/config";
 
 interface LocaleSwitcherProps {
@@ -10,6 +12,7 @@ interface LocaleSwitcherProps {
 export function LocaleSwitcher({ currentLocale }: LocaleSwitcherProps) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -22,10 +25,17 @@ export function LocaleSwitcher({ currentLocale }: LocaleSwitcherProps) {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const handleLocaleChange = (locale: Locale) => {
+  // Get the path without the current locale prefix
+  const getLocalizedPath = (newLocale: Locale) => {
+    // Remove current locale from pathname
+    const pathWithoutLocale = pathname.replace(`/${currentLocale}`, "") || "/";
+    return `/${newLocale}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`;
+  };
+
+  const handleLocaleClick = (locale: Locale) => {
+    // Set cookie for future visits
     document.cookie = `locale=${locale};path=/;max-age=${60 * 60 * 24 * 365};samesite=lax`;
     setIsOpen(false);
-    window.location.reload();
   };
 
   return (
@@ -53,9 +63,10 @@ export function LocaleSwitcher({ currentLocale }: LocaleSwitcherProps) {
       {isOpen && (
         <div className="absolute right-0 mt-2 w-48 bg-neutral-dark/95 backdrop-blur-md border border-white/20 rounded-xl shadow-lg overflow-hidden z-50">
           {locales.map((locale) => (
-            <button
+            <Link
               key={locale}
-              onClick={() => handleLocaleChange(locale)}
+              href={getLocalizedPath(locale)}
+              onClick={() => handleLocaleClick(locale)}
               className={`w-full flex items-center gap-3 px-4 py-3 text-sm transition ${
                 locale === currentLocale
                   ? "bg-brand-green/20 text-white"
@@ -73,7 +84,7 @@ export function LocaleSwitcher({ currentLocale }: LocaleSwitcherProps) {
                   />
                 </svg>
               )}
-            </button>
+            </Link>
           ))}
         </div>
       )}

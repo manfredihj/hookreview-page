@@ -25,17 +25,17 @@
     "happyClients": "Happy customers don't leave reviews.",
     "angryClients": "Upset customers do.",
     "noMetrics": "You don't have metrics by location or employee.",
-    "solution": "Hookreview turns every visit into an opportunity for a positive review."
+    "solution": "gofidely turns every visit into an opportunity for a positive review."
   },
   "howItWorks": {
-    "title": "How Hookreview works",
+    "title": "How gofidely works",
     "step1Title": "Create your company and location",
     "step1Desc": "Set up your business in minutes.",
     "step2Title": "Customize your review page",
     "step2Desc": "Match the look to your brand.",
     "step3Title": "Generate QR codes",
     "step3Desc": "General QR and per employee.",
-    "step4Title": "Hookreview sends to Google",
+    "step4Title": "gofidely sends to Google",
     "step4Desc": "Only when the experience was positive.",
     "cta": "Get started"
   },
@@ -102,9 +102,9 @@
     "q2": "What happens if I cancel?",
     "a2": "If you cancel before day 15, nothing is charged. If you cancel after, you keep access until the end of the month.",
     "q3": "Does it work for any industry?",
-    "a3": "Yes, Hookreview works for any business that receives customers: restaurants, salons, offices, stores, and more.",
+    "a3": "Yes, gofidely works for any business that receives customers: restaurants, salons, offices, stores, and more.",
     "q4": "How does it connect to Google?",
-    "a4": "You just need to set up the link to your Google Business listing. Hookreview redirects satisfied customers directly to leave a review.",
+    "a4": "You just need to set up the link to your Google Business listing. gofidely redirects satisfied customers directly to leave a review.",
     "q5": "Can I have multiple locations?",
     "a5": "Yes, you can add additional locations for USD 15/month each. Each location has its own metrics and QR codes.",
     "q6": "Will I lose my data if I don't pay?",

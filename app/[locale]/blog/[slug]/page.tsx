@@ -1,23 +1,25 @@
-import { cookies } from 'next/headers'
 import { getPostBySlug, getAllPosts } from '@/lib/blog'
 import { notFound } from 'next/navigation'
 import { Navbar } from '@/components/sections/Navbar'
 import { Footer } from '@/components/sections/Footer'
 import { getDictionary } from '@/lib/i18n/dictionaries'
-import { defaultLocale, isValidLocale, type Locale } from '@/lib/i18n/config'
+import { locales, isValidLocale, type Locale } from '@/lib/i18n/config'
 import type { Metadata } from 'next'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
 type Props = {
-  params: Promise<{ slug: string }>
+  params: Promise<{ locale: string; slug: string }>
 }
 
 export async function generateStaticParams() {
   const posts = getAllPosts()
-  return posts.map((post) => ({
-    slug: post.slug,
-  }))
+  return locales.flatMap((locale) =>
+    posts.map((post) => ({
+      locale,
+      slug: post.slug,
+    }))
+  )
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -53,13 +55,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BlogPostPage({ params }: Props) {
-  const { slug } = await params
-  const post = getPostBySlug(slug)
+  const { locale, slug } = await params
 
-  const cookieStore = await cookies()
-  const localeCookie = cookieStore.get('locale')?.value
-  const locale: Locale = localeCookie && isValidLocale(localeCookie) ? localeCookie : defaultLocale
-  const t = await getDictionary(locale)
+  if (!isValidLocale(locale)) {
+    notFound()
+  }
+
+  const post = getPostBySlug(slug)
+  const t = await getDictionary(locale as Locale)
 
   if (!post) {
     notFound()
@@ -79,7 +82,7 @@ export default async function BlogPostPage({ params }: Props) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'hookreview',
+      name: 'gofidely',
       logo: {
         '@type': 'ImageObject',
         url: 'https://hookflow-landing-page.vercel.app/logo-white.png',
@@ -93,7 +96,7 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <Navbar t={t} locale={locale} />
+      <Navbar t={t} locale={locale as Locale} />
       <main className="min-h-screen pt-20">
         <article className="container py-16">
           <div className="max-w-4xl mx-auto">

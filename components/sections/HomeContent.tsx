@@ -373,7 +373,7 @@ export function HomeContent({ t }: HomeContentProps) {
               </p>
 
               <a
-                href="https://app.hookreview.com/register"
+                href="https://app.gofidely.com/register"
                 className="block w-full bg-brand-green text-neutral-dark font-bold py-4 rounded-full hover:opacity-90 transition text-center text-lg"
               >
                 {t.pricing.cta}
@@ -511,7 +511,7 @@ export function HomeContent({ t }: HomeContentProps) {
               {t.finalCta.subtitle}
             </p>
             <a
-              href="https://app.hookreview.com/register"
+              href="https://app.gofidely.com/register"
               className="bg-brand-green text-neutral-dark font-bold px-10 py-4 rounded-full hover:opacity-90 transition text-lg inline-block"
             >
               {t.finalCta.cta}

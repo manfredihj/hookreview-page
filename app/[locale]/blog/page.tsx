@@ -1,33 +1,39 @@
-import { cookies } from 'next/headers'
+import { notFound } from 'next/navigation'
 import { getAllPosts } from '@/lib/blog'
 import Link from 'next/link'
 import { Navbar } from '@/components/sections/Navbar'
 import { Footer } from '@/components/sections/Footer'
 import { getDictionary } from '@/lib/i18n/dictionaries'
-import { defaultLocale, isValidLocale, type Locale } from '@/lib/i18n/config'
+import { isValidLocale, type Locale } from '@/lib/i18n/config'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Blog',
   description: 'Aprende sobre automatización con IA, WhatsApp Business, recuperación de carritos y más.',
   openGraph: {
-    title: 'Blog - hookreview',
+    title: 'Blog - gofidely',
     description: 'Aprende sobre automatización con IA, WhatsApp Business, recuperación de carritos y más.',
     type: 'website',
   },
 }
 
-export default async function BlogPage() {
+type Props = {
+  params: Promise<{ locale: string }>
+}
+
+export default async function BlogPage({ params }: Props) {
+  const { locale } = await params
   const posts = getAllPosts()
 
-  const cookieStore = await cookies()
-  const localeCookie = cookieStore.get('locale')?.value
-  const locale: Locale = localeCookie && isValidLocale(localeCookie) ? localeCookie : defaultLocale
-  const t = await getDictionary(locale)
+  if (!isValidLocale(locale)) {
+    notFound()
+  }
+
+  const t = await getDictionary(locale as Locale)
 
   return (
     <>
-      <Navbar t={t} locale={locale} />
+      <Navbar t={t} locale={locale as Locale} />
       <main className="min-h-screen pt-20">
         <div className="container py-16">
           <div className="text-center mb-16">
@@ -50,7 +56,7 @@ export default async function BlogPage() {
               {posts.map((post) => (
                 <Link
                   key={post.slug}
-                  href={`/blog/${post.slug}`}
+                  href={`/${locale}/blog/${post.slug}`}
                   className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 hover:border-brand-green/50 transition-all"
                 >
                   {post.image && (

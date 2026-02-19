@@ -1,22 +1,30 @@
-export const locales = ['en', 'es-AR', 'es-MX'] as const;
+export const locales = ['ar', 'mx', 'en'] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = 'en';
 
 export const localeNames: Record<Locale, string> = {
+  'ar': 'Español (AR)',
+  'mx': 'Español (MX)',
   'en': 'English',
-  'es-AR': 'Español (AR)',
-  'es-MX': 'Español (MX)',
 };
 
 export const localeFlags: Record<Locale, string> = {
+  'ar': '🇦🇷',
+  'mx': '🇲🇽',
   'en': '🇺🇸',
-  'es-AR': '🇦🇷',
-  'es-MX': '🇲🇽',
 };
 
+// Map URL locale to full locale code for HTML lang attribute
+export const localeToLang: Record<Locale, string> = {
+  'ar': 'es-AR',
+  'mx': 'es-MX',
+  'en': 'en',
+};
+
+// Map country code (from IP) to locale
 export const countryToLocale: Record<string, Locale> = {
-  AR: 'es-AR',
-  MX: 'es-MX',
+  AR: 'ar',
+  MX: 'mx',
   US: 'en',
   GB: 'en',
   CA: 'en',

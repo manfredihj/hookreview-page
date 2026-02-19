@@ -66,7 +66,7 @@
 title: "Título del post"
 date: "2025-01-15"
 excerpt: "Descripción corta del post"
-author: "hookreview"
+author: "gofidely"
 tags: ["tag1", "tag2"]
 image: "/ruta/imagen.jpg"
 ---

@@ -1,4 +1,4 @@
-import { cookies } from "next/headers";
+import { notFound } from "next/navigation";
 import { getLandingContent } from "@/lib/content";
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
@@ -8,10 +8,14 @@ import { CallToAction } from "@/components/sections/CTA";
 import { Footer } from "@/components/sections/Footer";
 import { FacebookViewContent } from "@/components/FacebookViewContent";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { defaultLocale, isValidLocale, type Locale } from "@/lib/i18n/config";
+import { isValidLocale, type Locale } from "@/lib/i18n/config";
 import type { Metadata } from "next";
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+type Props = {
+  params: Promise<{ locale: string; slug: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const data = await getLandingContent(slug);
 
@@ -53,14 +57,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-export default async function LandingPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const data = await getLandingContent(slug);
+export default async function LandingPage({ params }: Props) {
+  const { locale, slug } = await params;
 
-  const cookieStore = await cookies();
-  const localeCookie = cookieStore.get("locale")?.value;
-  const locale: Locale = localeCookie && isValidLocale(localeCookie) ? localeCookie : defaultLocale;
-  const t = await getDictionary(locale);
+  if (!isValidLocale(locale)) {
+    notFound();
+  }
+
+  const data = await getLandingContent(slug);
+  const t = await getDictionary(locale as Locale);
 
   if (!data) {
     return (

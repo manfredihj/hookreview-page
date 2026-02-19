@@ -1,5 +1,5 @@
 
-# hookreview — Landings en Next.js 15 + Tailwind (+ shadcn-like)
+# gofidely — Landings en Next.js 15 + Tailwind (+ shadcn-like)
 
 Proyecto base listo para múltiples landings dinámicas por segmento (`/[slug]`).
 

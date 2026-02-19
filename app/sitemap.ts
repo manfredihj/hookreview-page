@@ -3,7 +3,7 @@ import { LANDINGS } from '@/lib/content'
 import { getAllPosts } from '@/lib/blog'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://hookreview.com'
+  const baseUrl = 'https://gofidely.com'
 
   // Homepage
   const routes = [

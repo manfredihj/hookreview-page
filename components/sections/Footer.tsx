@@ -11,7 +11,7 @@ export function Footer({ t }: FooterProps) {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <p className="text-sm text-white/70">
-              © {new Date().getFullYear()} Hookreview · {t.footer.rights}
+              © {new Date().getFullYear()} gofidely · {t.footer.rights}
             </p>
             <p className="text-xs text-white/50 mt-1">
               {t.footer.madeIn}
@@ -32,7 +32,7 @@ export function Footer({ t }: FooterProps) {
 
           <div className="flex items-center gap-4">
             <a
-              href="https://www.instagram.com/hookreview"
+              href="https://www.instagram.com/gofidely"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/60 hover:text-white transition"
@@ -43,7 +43,7 @@ export function Footer({ t }: FooterProps) {
               </svg>
             </a>
             <a
-              href="https://www.linkedin.com/company/hookreview"
+              href="https://www.linkedin.com/company/gofidely"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/60 hover:text-white transition"

@@ -25,17 +25,17 @@
     "happyClients": "Clientes felices no dejan reseña.",
     "angryClients": "Los clientes molestos sí lo hacen.",
     "noMetrics": "No tienes métricas por sucursal o empleado.",
-    "solution": "Hookreview convierte cada visita en una oportunidad de reseña positiva."
+    "solution": "gofidely convierte cada visita en una oportunidad de reseña positiva."
   },
   "howItWorks": {
-    "title": "Así funciona Hookreview",
+    "title": "Así funciona gofidely",
     "step1Title": "Creas tu empresa y sucursal",
     "step1Desc": "Configura tu negocio en minutos.",
     "step2Title": "Personalizas tu página de reseñas",
     "step2Desc": "Adapta el look a tu marca.",
     "step3Title": "Generas QRs",
     "step3Desc": "QR general y por empleado.",
-    "step4Title": "Hookreview deriva a Google",
+    "step4Title": "gofidely deriva a Google",
     "step4Desc": "Solo cuando la experiencia fue positiva.",
     "cta": "Empezar ahora"
   },
@@ -102,9 +102,9 @@
     "q2": "¿Qué pasa si cancelo?",
     "a2": "Si cancelas antes del día 15, no se cobra nada. Si cancelas después, mantienes el acceso hasta fin de mes.",
     "q3": "¿Funciona para cualquier giro?",
-    "a3": "Sí, Hookreview funciona para cualquier negocio que reciba clientes: restaurantes, estéticas, consultorios, tiendas, y más.",
+    "a3": "Sí, gofidely funciona para cualquier negocio que reciba clientes: restaurantes, estéticas, consultorios, tiendas, y más.",
     "q4": "¿Cómo se conecta con Google?",
-    "a4": "Solo necesitas configurar el link de tu ficha de Google Business. Hookreview redirige a los clientes satisfechos directamente a dejar reseña.",
+    "a4": "Solo necesitas configurar el link de tu ficha de Google Business. gofidely redirige a los clientes satisfechos directamente a dejar reseña.",
     "q5": "¿Puedo tener varias sucursales?",
     "a5": "Sí, puedes agregar sucursales adicionales por USD 15/mes cada una. Cada sucursal tiene sus propias métricas y QRs.",
     "q6": "¿Se pierden mis datos si no pago?",
