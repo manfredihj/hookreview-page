@@ -1,0 +1,130 @@
+{
+  "navbar": {
+    "howItWorks": "How it works",
+    "benefits": "Benefits",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "cta": "Try now"
+  },
+  "hero": {
+    "title": "Turn happy customers into 5-star Google reviews automatically",
+    "subtitle": "Capture feedback before sending them to Google, boost your rating, and measure the performance of your locations and employees.",
+    "cta": "Try now",
+    "watchVideo": "See how it works",
+    "cancelAnytime": "Cancel anytime."
+  },
+  "videoDemo": {
+    "watchIn3Min": "See how it works in less than 3 minutes",
+    "clickToWatch": "Click to watch the video",
+    "setup5Min": "Setup in 5 minutes",
+    "qrPerBranch": "QR per location and employee",
+    "realTimeMetrics": "Real-time metrics"
+  },
+  "problem": {
+    "title": "Your Google rating doesn't reflect how well you work",
+    "happyClients": "Happy customers don't leave reviews.",
+    "angryClients": "Upset customers do.",
+    "noMetrics": "You don't have metrics by location or employee.",
+    "solution": "Hookreview turns every visit into an opportunity for a positive review."
+  },
+  "howItWorks": {
+    "title": "How Hookreview works",
+    "step1Title": "Create your company and location",
+    "step1Desc": "Set up your business in minutes.",
+    "step2Title": "Customize your review page",
+    "step2Desc": "Match the look to your brand.",
+    "step3Title": "Generate QR codes",
+    "step3Desc": "General QR and per employee.",
+    "step4Title": "Hookreview sends to Google",
+    "step4Desc": "Only when the experience was positive.",
+    "cta": "Get started"
+  },
+  "benefits": {
+    "title": "More reviews, better reputation, more control",
+    "increase5Stars": "Increase 5-star reviews",
+    "increase5StarsDesc": "Consistently and automatically.",
+    "protectRating": "Protect your rating",
+    "protectRatingDesc": "Filter negative experiences before Google.",
+    "measureConversion": "Measure Google conversion",
+    "measureConversionDesc": "Track how many leave a review.",
+    "employeeRanking": "Employee ranking",
+    "employeeRankingDesc": "Measure who gives the best experience.",
+    "branchComparison": "Location comparison",
+    "branchComparisonDesc": "See which location performs better.",
+    "clearDashboard": "Clear and simple dashboard",
+    "clearDashboardDesc": "Everything in one place."
+  },
+  "differentiator": {
+    "title": "It's not just a QR",
+    "multiBranch": "Multi-location",
+    "multiBranchDesc": "Each location has its own page and metrics.",
+    "qrPerEmployee": "QR per employee",
+    "qrPerEmployeeDesc": "Measure real experience per person.",
+    "smartDashboard": "Smart dashboard",
+    "smartDashboardDesc": "Average rating, conversion rate, and complete tracking."
+  },
+  "cases": {
+    "title": "Businesses already using it",
+    "restaurant": "Restaurant",
+    "restaurantDesc": "Implementation in 5 minutes",
+    "restaurantQuote": "Easy to set up, immediate results.",
+    "salon": "Hair salon",
+    "salonDesc": "QR per stylist",
+    "salonQuote": "Now I know who gives the best experience.",
+    "chain": "Store chain",
+    "chainDesc": "Ready to scale",
+    "chainQuote": "Multi-location from day one."
+  },
+  "pricing": {
+    "title": "Start today",
+    "subtitle": "Launch Plan",
+    "price": "USD 39",
+    "perMonth": "/month",
+    "feature1": "1 location",
+    "feature2": "Up to 5 employees",
+    "feature3": "Unlimited QR codes",
+    "feature4": "Full dashboard",
+    "feature5": "Tracking and metrics",
+    "additionalBranch": "Additional location: USD 15/month",
+    "cta": "Try now",
+    "cardRequired": "Card required. Cancel before day 15 and you won't be charged."
+  },
+  "promo": {
+    "title": "Have a code?",
+    "placeholder": "Enter your code",
+    "apply": "Apply",
+    "description": "Extend your trial or access special benefits."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "q1": "Do I need a card for the trial?",
+    "a1": "Yes, you need to add a card to start the trial. But nothing is charged until after 15 days. You can cancel at any time.",
+    "q2": "What happens if I cancel?",
+    "a2": "If you cancel before day 15, nothing is charged. If you cancel after, you keep access until the end of the month.",
+    "q3": "Does it work for any industry?",
+    "a3": "Yes, Hookreview works for any business that receives customers: restaurants, salons, offices, stores, and more.",
+    "q4": "How does it connect to Google?",
+    "a4": "You just need to set up the link to your Google Business listing. Hookreview redirects satisfied customers directly to leave a review.",
+    "q5": "Can I have multiple locations?",
+    "a5": "Yes, you can add additional locations for USD 15/month each. Each location has its own metrics and QR codes.",
+    "q6": "Will I lose my data if I don't pay?",
+    "a6": "Your data is kept for 30 days after canceling. If you reactivate your account, everything stays as it was.",
+    "q7": "Can I measure employees?",
+    "a7": "Yes, you can create individual QR codes per employee and see metrics for each one: average rating, number of reviews, and Google conversion."
+  },
+  "finalCta": {
+    "title": "Your next 5-star review starts today",
+    "subtitle": "Setup in less than 5 minutes.",
+    "cta": "Try now"
+  },
+  "videoModal": {
+    "placeholder": "Video placeholder - Add your video here"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeIn": "Made with love",
+    "contact": "Contact",
+    "terms": "Terms",
+    "privacy": "Privacy"
+  }
+}

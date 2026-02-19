@@ -1,25 +1,33 @@
+import { cookies } from 'next/headers'
 import { getAllPosts } from '@/lib/blog'
 import Link from 'next/link'
 import { Navbar } from '@/components/sections/Navbar'
 import { Footer } from '@/components/sections/Footer'
+import { getDictionary } from '@/lib/i18n/dictionaries'
+import { defaultLocale, isValidLocale, type Locale } from '@/lib/i18n/config'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Blog',
   description: 'Aprende sobre automatización con IA, WhatsApp Business, recuperación de carritos y más.',
   openGraph: {
-    title: 'Blog - HookflowAI',
+    title: 'Blog - hookreview',
     description: 'Aprende sobre automatización con IA, WhatsApp Business, recuperación de carritos y más.',
     type: 'website',
   },
 }
 
-export default function BlogPage() {
+export default async function BlogPage() {
   const posts = getAllPosts()
+
+  const cookieStore = await cookies()
+  const localeCookie = cookieStore.get('locale')?.value
+  const locale: Locale = localeCookie && isValidLocale(localeCookie) ? localeCookie : defaultLocale
+  const t = await getDictionary(locale)
 
   return (
     <>
-      <Navbar />
+      <Navbar t={t} locale={locale} />
       <main className="min-h-screen pt-20">
         <div className="container py-16">
           <div className="text-center mb-16">
@@ -89,7 +97,7 @@ export default function BlogPage() {
           )}
         </div>
       </main>
-      <Footer />
+      <Footer t={t} />
     </>
   )
 }

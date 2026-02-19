@@ -34,7 +34,7 @@ export type Landing = {
 export const LANDINGS: Record<string, Landing> = {
   "soluciones-ai-para-ecommerce": {
     title: "Duplicá tus ventas recuperando carritos por WhatsApp 🛒",
-    description: "HookflowAI recupera el doble de carritos abandonados que tus campañas de email. Integración rápida y resultados medibles.",
+    description: "hookreview recupera el doble de carritos abandonados que tus campañas de email. Integración rápida y resultados medibles.",
     cta: "Agendar reunión",
     calLink: "https://cal.com/julian-manfredi/agentes-ia-reunion-descubrimiento",
     niche: "ecommerce",
@@ -51,7 +51,7 @@ export const LANDINGS: Record<string, Landing> = {
     ],
     ctaBlock: { text: "¿Listo para recuperar el doble de carritos?", cta: "Empezar ahora" },
     videoUrl: "https://www.loom.com/share/98ba5c9ca845499d85eb8f33b57d2c5e",
-    videoTitle: "Descubrí cómo funciona HookflowAI",
+    videoTitle: "Descubrí cómo funciona hookreview",
     pricingTitle: "Planes que escalan con tu negocio",
     pricingSubtitle: "Elegí el plan perfecto para tu e-commerce. Sin permanencia, cancelá cuando quieras.",
     showPricing: false,
@@ -191,7 +191,7 @@ export const LANDINGS: Record<string, Landing> = {
         price: "20% comisión",
         description: "Vendé y nosotros operamos",
         features: [
-          "Reventa de plataforma HookflowAI",
+          "Reventa de plataforma hookreview",
           "Tus clientes, nuestra operación",
           "Material de ventas incluido",
           "Soporte técnico para tus clientes"
@@ -333,7 +333,7 @@ export const LANDINGS: Record<string, Landing> = {
     ],
     ctaBlock: { text: "¿Listo para automatizar la atención de tu local?", cta: "Empezar ahora" },
     videoUrl: "https://www.loom.com/share/98ba5c9ca845499d85eb8f33b57d2c5e",
-    videoTitle: "Mirá cómo funciona HookflowAI para gastronomía",
+    videoTitle: "Mirá cómo funciona hookreview para gastronomía",
     pricingTitle: "Planes para locales gastronómicos",
     pricingSubtitle: "Elegí el plan perfecto según el volumen de tu negocio. Sin permanencia, cancelá cuando quieras.",
     showPricing: false,
@@ -483,7 +483,7 @@ export const LANDINGS: Record<string, Landing> = {
   },
   "soluciones-ia-para-atencion-al-cliente": {
     title: "Atendé a todos tus clientes por WhatsApp e Instagram con Inteligencia Artificial",
-    description: "HookflowAI responde, agenda y organiza tus conversaciones por WhatsApp e Instagram, 24/7. La inteligencia artificial ya reemplaza la atención al cliente manual.",
+    description: "hookreview responde, agenda y organiza tus conversaciones por WhatsApp e Instagram, 24/7. La inteligencia artificial ya reemplaza la atención al cliente manual.",
     cta: "Agenda Demo Gratuita",
     calLink: "https://cal.com/julian-manfredi/agentes-ia-reunion-descubrimiento",
     niche: "customer_service",
@@ -500,7 +500,7 @@ export const LANDINGS: Record<string, Landing> = {
       },
       {
         title: "Tu agente de IA 24/7",
-        text: "Tu negocio no duerme. Tu agente de IA tampoco. HookflowAI atiende por WhatsApp e Instagram, responde consultas, agenda turnos y califica leads al instante. Todo desde una bandeja unificada para vos y tu equipo."
+        text: "Tu negocio no duerme. Tu agente de IA tampoco. hookreview atiende por WhatsApp e Instagram, responde consultas, agenda turnos y califica leads al instante. Todo desde una bandeja unificada para vos y tu equipo."
       },
       {
         title: "Responde automáticamente las preguntas frecuentes",
@@ -516,7 +516,7 @@ export const LANDINGS: Record<string, Landing> = {
       },
       {
         title: "WhatsApp + Instagram + Web. Todo en un solo lugar",
-        text: "Olvidate de abrir 3 celulares distintos. Con HookflowAI, toda la atención al cliente se centraliza en una sola bandeja inteligente con chat unificado, etiquetas automáticas, historial del cliente y derivaciones internas."
+        text: "Olvidate de abrir 3 celulares distintos. Con hookreview, toda la atención al cliente se centraliza en una sola bandeja inteligente con chat unificado, etiquetas automáticas, historial del cliente y derivaciones internas."
       }
     ],
     ctaBlock: {
@@ -570,7 +570,7 @@ export const LANDINGS: Record<string, Landing> = {
   },
   "soluciones-ai-para-atencion-al-cliente": {
     title: "Atendé a todos tus clientes por WhatsApp e Instagram con Inteligencia Artificial",
-    description: "HookflowAI responde, agenda y organiza tus conversaciones por WhatsApp e Instagram, 24/7. La inteligencia artificial ya reemplaza la atención al cliente manual.",
+    description: "hookreview responde, agenda y organiza tus conversaciones por WhatsApp e Instagram, 24/7. La inteligencia artificial ya reemplaza la atención al cliente manual.",
     cta: "Agenda Demo Gratuita",
     calLink: "https://cal.com/julian-manfredi/agentes-ia-reunion-descubrimiento",
     niche: "customer_service",
@@ -587,7 +587,7 @@ export const LANDINGS: Record<string, Landing> = {
       },
       {
         title: "Tu agente de IA 24/7",
-        text: "Tu negocio no duerme. Tu agente de IA tampoco. HookflowAI atiende por WhatsApp e Instagram, responde consultas, agenda turnos y califica leads al instante. Todo desde una bandeja unificada para vos y tu equipo."
+        text: "Tu negocio no duerme. Tu agente de IA tampoco. hookreview atiende por WhatsApp e Instagram, responde consultas, agenda turnos y califica leads al instante. Todo desde una bandeja unificada para vos y tu equipo."
       },
       {
         title: "Responde automáticamente las preguntas frecuentes",
@@ -603,7 +603,7 @@ export const LANDINGS: Record<string, Landing> = {
       },
       {
         title: "WhatsApp + Instagram + Web. Todo en un solo lugar",
-        text: "Olvidate de abrir 3 celulares distintos. Con HookflowAI, toda la atención al cliente se centraliza en una sola bandeja inteligente con chat unificado, etiquetas automáticas, historial del cliente y derivaciones internas."
+        text: "Olvidate de abrir 3 celulares distintos. Con hookreview, toda la atención al cliente se centraliza en una sola bandeja inteligente con chat unificado, etiquetas automáticas, historial del cliente y derivaciones internas."
       }
     ],
     ctaBlock: {

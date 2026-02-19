@@ -1,4 +1,4 @@
-
+import { cookies } from "next/headers";
 import { getLandingContent } from "@/lib/content";
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
@@ -7,6 +7,8 @@ import { Pricing } from "@/components/sections/Pricing";
 import { CallToAction } from "@/components/sections/CTA";
 import { Footer } from "@/components/sections/Footer";
 import { FacebookViewContent } from "@/components/FacebookViewContent";
+import { getDictionary } from "@/lib/i18n/dictionaries";
+import { defaultLocale, isValidLocale, type Locale } from "@/lib/i18n/config";
 import type { Metadata } from "next";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -55,6 +57,11 @@ export default async function LandingPage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const data = await getLandingContent(slug);
 
+  const cookieStore = await cookies();
+  const localeCookie = cookieStore.get("locale")?.value;
+  const locale: Locale = localeCookie && isValidLocale(localeCookie) ? localeCookie : defaultLocale;
+  const t = await getDictionary(locale);
+
   if (!data) {
     return (
       <main className="container py-24">
@@ -87,7 +94,7 @@ export default async function LandingPage({ params }: { params: Promise<{ slug: 
         />
       )}
       {data.ctaBlock && <CallToAction text={data.ctaBlock.text} cta={data.ctaBlock.cta} calLink={data.calLink} />}
-      <Footer />
+      <Footer t={t} />
     </main>
   );
 }

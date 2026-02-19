@@ -1,0 +1,130 @@
+{
+  "navbar": {
+    "howItWorks": "Cómo funciona",
+    "benefits": "Beneficios",
+    "pricing": "Precios",
+    "faq": "FAQ",
+    "cta": "Probar ahora"
+  },
+  "hero": {
+    "title": "Convertí clientes felices en reseñas 5 estrellas en Google automáticamente",
+    "subtitle": "Capturá feedback antes de enviarlos a Google, aumentá tu calificación y medí el desempeño de tus sucursales y empleados.",
+    "cta": "Probar ahora",
+    "watchVideo": "Ver cómo funciona",
+    "cancelAnytime": "Cancelás cuando quieras."
+  },
+  "videoDemo": {
+    "watchIn3Min": "Mirá cómo funciona en menos de 3 minutos",
+    "clickToWatch": "Click para ver el video",
+    "setup5Min": "Setup en 5 minutos",
+    "qrPerBranch": "QR por sucursal y empleado",
+    "realTimeMetrics": "Métricas en tiempo real"
+  },
+  "problem": {
+    "title": "Tu calificación en Google no refleja lo bien que trabajás",
+    "happyClients": "Clientes felices no dejan reseña.",
+    "angryClients": "Los clientes molestos sí lo hacen.",
+    "noMetrics": "No tenés métricas por sucursal o empleado.",
+    "solution": "Hookreview convierte cada visita en una oportunidad de reseña positiva."
+  },
+  "howItWorks": {
+    "title": "Así funciona Hookreview",
+    "step1Title": "Creás tu empresa y sucursal",
+    "step1Desc": "Configurá tu negocio en minutos.",
+    "step2Title": "Personalizás tu página de reseñas",
+    "step2Desc": "Adaptá el look a tu marca.",
+    "step3Title": "Generás QRs",
+    "step3Desc": "QR general y por empleado.",
+    "step4Title": "Hookreview deriva a Google",
+    "step4Desc": "Solo cuando la experiencia fue positiva.",
+    "cta": "Empezar ahora"
+  },
+  "benefits": {
+    "title": "Más reseñas, mejor reputación, más control",
+    "increase5Stars": "Aumentá reseñas 5 estrellas",
+    "increase5StarsDesc": "De forma constante y automática.",
+    "protectRating": "Protegé tu calificación",
+    "protectRatingDesc": "Filtrá experiencias negativas antes de Google.",
+    "measureConversion": "Medí conversión a Google",
+    "measureConversionDesc": "Trackeá cuántos llegan a dejar reseña.",
+    "employeeRanking": "Ranking por empleado",
+    "employeeRankingDesc": "Medí quién da mejor experiencia.",
+    "branchComparison": "Comparativa entre sucursales",
+    "branchComparisonDesc": "Vé qué local performa mejor.",
+    "clearDashboard": "Dashboard claro y simple",
+    "clearDashboardDesc": "Todo en un solo lugar."
+  },
+  "differentiator": {
+    "title": "No es solo un QR",
+    "multiBranch": "Multi-sucursal",
+    "multiBranchDesc": "Cada local tiene su propia página y métricas.",
+    "qrPerEmployee": "QR por empleado",
+    "qrPerEmployeeDesc": "Medí experiencia real por persona.",
+    "smartDashboard": "Dashboard inteligente",
+    "smartDashboardDesc": "Calificación promedio, tasa de conversión y tracking completo."
+  },
+  "cases": {
+    "title": "Negocios que ya lo están usando",
+    "restaurant": "Restaurante",
+    "restaurantDesc": "Implementación en 5 minutos",
+    "restaurantQuote": "Fácil de configurar, resultados inmediatos.",
+    "salon": "Peluquería",
+    "salonDesc": "QR por estilista",
+    "salonQuote": "Ahora sé quién da la mejor experiencia.",
+    "chain": "Cadena de locales",
+    "chainDesc": "Listo para escalar",
+    "chainQuote": "Multi-sucursal desde el día uno."
+  },
+  "pricing": {
+    "title": "Empezá hoy",
+    "subtitle": "Plan Lanzamiento Argentina",
+    "price": "USD 39",
+    "perMonth": "/mes",
+    "feature1": "1 sucursal",
+    "feature2": "Hasta 5 empleados",
+    "feature3": "QRs ilimitados",
+    "feature4": "Dashboard completo",
+    "feature5": "Tracking y métricas",
+    "additionalBranch": "Sucursal adicional: USD 15/mes",
+    "cta": "Probar ahora",
+    "cardRequired": "Requiere tarjeta. Cancelás antes del día 15 y no se cobra."
+  },
+  "promo": {
+    "title": "¿Tenés un código?",
+    "placeholder": "Ingresá tu código",
+    "apply": "Aplicar",
+    "description": "Extendé tu prueba o accedé a beneficios especiales."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "q1": "¿Necesito tarjeta para la prueba?",
+    "a1": "Sí, necesitás agregar una tarjeta para comenzar la prueba. Pero no se cobra nada hasta pasados los 15 días. Podés cancelar en cualquier momento.",
+    "q2": "¿Qué pasa si cancelo?",
+    "a2": "Si cancelás antes del día 15, no se cobra nada. Si cancelás después, mantenés el acceso hasta fin de mes.",
+    "q3": "¿Funciona para cualquier rubro?",
+    "a3": "Sí, Hookreview funciona para cualquier negocio que reciba clientes: restaurantes, peluquerías, consultorios, tiendas, y más.",
+    "q4": "¿Cómo se conecta con Google?",
+    "a4": "Solo necesitás configurar el link de tu ficha de Google Business. Hookreview redirige a los clientes satisfechos directamente a dejar reseña.",
+    "q5": "¿Puedo tener varias sucursales?",
+    "a5": "Sí, podés agregar sucursales adicionales por USD 15/mes cada una. Cada sucursal tiene sus propias métricas y QRs.",
+    "q6": "¿Se pierden mis datos si no pago?",
+    "a6": "Tus datos se conservan por 30 días después de cancelar. Si reactivás tu cuenta, todo sigue como estaba.",
+    "q7": "¿Puedo medir empleados?",
+    "a7": "Sí, podés crear QRs individuales por empleado y ver métricas de cada uno: calificación promedio, cantidad de reseñas, y conversión a Google."
+  },
+  "finalCta": {
+    "title": "Tu próxima reseña 5 estrellas empieza hoy",
+    "subtitle": "Configuración en menos de 5 minutos.",
+    "cta": "Probar ahora"
+  },
+  "videoModal": {
+    "placeholder": "Video placeholder - Agregá tu video aquí"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "madeIn": "Hecho en Argentina",
+    "contact": "Contacto",
+    "terms": "Términos",
+    "privacy": "Privacidad"
+  }
+}

@@ -1,7 +1,10 @@
+import { cookies } from 'next/headers'
 import { getPostBySlug, getAllPosts } from '@/lib/blog'
 import { notFound } from 'next/navigation'
 import { Navbar } from '@/components/sections/Navbar'
 import { Footer } from '@/components/sections/Footer'
+import { getDictionary } from '@/lib/i18n/dictionaries'
+import { defaultLocale, isValidLocale, type Locale } from '@/lib/i18n/config'
 import type { Metadata } from 'next'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -53,6 +56,11 @@ export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params
   const post = getPostBySlug(slug)
 
+  const cookieStore = await cookies()
+  const localeCookie = cookieStore.get('locale')?.value
+  const locale: Locale = localeCookie && isValidLocale(localeCookie) ? localeCookie : defaultLocale
+  const t = await getDictionary(locale)
+
   if (!post) {
     notFound()
   }
@@ -71,7 +79,7 @@ export default async function BlogPostPage({ params }: Props) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'HookflowAI',
+      name: 'hookreview',
       logo: {
         '@type': 'ImageObject',
         url: 'https://hookflow-landing-page.vercel.app/logo-white.png',
@@ -85,7 +93,7 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <Navbar />
+      <Navbar t={t} locale={locale} />
       <main className="min-h-screen pt-20">
         <article className="container py-16">
           <div className="max-w-4xl mx-auto">
@@ -150,7 +158,7 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </article>
       </main>
-      <Footer />
+      <Footer t={t} />
     </>
   )
 }
