@@ -27,10 +27,10 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={lang}>
       <head>
         {/* hreflang tags for SEO */}
-        <link rel="alternate" hrefLang="es-AR" href="https://hookflow-landing-page.vercel.app/ar" />
-        <link rel="alternate" hrefLang="es-MX" href="https://hookflow-landing-page.vercel.app/mx" />
-        <link rel="alternate" hrefLang="en" href="https://hookflow-landing-page.vercel.app/en" />
-        <link rel="alternate" hrefLang="x-default" href="https://hookflow-landing-page.vercel.app/en" />
+        <link rel="alternate" hrefLang="es-AR" href="https://gofidely.com/ar" />
+        <link rel="alternate" hrefLang="es-MX" href="https://gofidely.com/mx" />
+        <link rel="alternate" hrefLang="en" href="https://gofidely.com/en" />
+        <link rel="alternate" hrefLang="x-default" href="https://gofidely.com/en" />
       </head>
       <body>
         <GoogleTagManager />

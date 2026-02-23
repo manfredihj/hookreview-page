@@ -78,29 +78,32 @@
   "pricing": {
     "title": "Start today",
     "subtitle": "Launch Plan",
-    "price": "USD 39",
+    "promoTag": "30% OFF for 6 months",
+    "price": "From USD 41",
+    "originalPrice": "USD 59",
     "perMonth": "/month",
     "feature1": "1 location",
-    "feature2": "Up to 5 employees",
+    "feature2": "Up to 200 reviews",
     "feature3": "Unlimited QR codes",
     "feature4": "Full dashboard",
     "feature5": "Tracking and metrics",
-    "additionalBranch": "Additional location: USD 15/month",
+    "additionalBranch": "Additional location: USD 13/month",
+    "additionalBranchOriginal": "(was USD 19/month)",
     "cta": "Try now",
-    "cardRequired": "Card required. Cancel before day 15 and you won't be charged."
+    "cardRequired": "Card required. Cancel before day 14 and you won't be charged.",
+    "promoNote": "Promotion valid for 6 months. Regular price applies after."
   },
   "promo": {
-    "title": "Have a code?",
-    "placeholder": "Enter your code",
-    "apply": "Apply",
-    "description": "Extend your trial or access special benefits."
+    "title": "Have a partner code?",
+    "description": "Sign up and enter your code at checkout to access special benefits.",
+    "cta": "Sign up"
   },
   "faq": {
     "title": "Frequently asked questions",
     "q1": "Do I need a card for the trial?",
-    "a1": "Yes, you need to add a card to start the trial. But nothing is charged until after 15 days. You can cancel at any time.",
+    "a1": "Yes, you need to add a card to start the trial. But nothing is charged until after 14 days. You can cancel at any time.",
     "q2": "What happens if I cancel?",
-    "a2": "If you cancel before day 15, nothing is charged. If you cancel after, you keep access until the end of the month.",
+    "a2": "If you cancel before day 14, nothing is charged. If you cancel after, you keep access until the end of the month.",
     "q3": "Does it work for any industry?",
     "a3": "Yes, gofidely works for any business that receives customers: restaurants, salons, offices, stores, and more.",
     "q4": "How does it connect to Google?",

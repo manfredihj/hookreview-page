@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 
 interface HomeContentProps {
@@ -8,8 +7,6 @@ interface HomeContentProps {
 }
 
 export function HomeContent({ t }: HomeContentProps) {
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
-  const [promoCode, setPromoCode] = useState("");
 
   return (
     <>
@@ -31,6 +28,7 @@ export function HomeContent({ t }: HomeContentProps) {
             >
               {t.hero.cta}
             </a>
+            {/* Video button - commented until video is ready
             <button
               onClick={() => setVideoModalOpen(true)}
               className="flex items-center gap-2 text-white font-semibold px-6 py-4 rounded-full border border-white/30 hover:bg-white/10 transition"
@@ -40,6 +38,7 @@ export function HomeContent({ t }: HomeContentProps) {
               </svg>
               {t.hero.watchVideo}
             </button>
+            */}
           </div>
 
           <p className="text-white/60 text-sm">
@@ -47,7 +46,7 @@ export function HomeContent({ t }: HomeContentProps) {
           </p>
         </section>
 
-        {/* Video Demo Section */}
+        {/* Video Demo Section - commented until video is ready
         <section className="container py-16">
           <div className="max-w-4xl mx-auto">
             <p className="text-center text-white/80 text-lg mb-6">
@@ -90,6 +89,7 @@ export function HomeContent({ t }: HomeContentProps) {
             </div>
           </div>
         </section>
+        */}
 
         {/* Problem Section */}
         <section className="container py-16">
@@ -330,8 +330,14 @@ export function HomeContent({ t }: HomeContentProps) {
           <div className="max-w-md mx-auto">
             <div className="bg-gradient-to-br from-brand-green/10 to-transparent border-2 border-brand-green rounded-2xl p-8">
               <div className="text-center mb-6">
+                <span className="inline-block bg-brand-green text-neutral-dark text-sm font-bold px-3 py-1 rounded-full mb-3">
+                  {t.pricing.promoTag}
+                </span>
                 <div className="text-5xl font-bold text-white mb-2">
                   {t.pricing.price}<span className="text-xl font-normal text-white/60">{t.pricing.perMonth}</span>
+                </div>
+                <div className="text-white/50 line-through text-lg">
+                  {t.pricing.originalPrice}{t.pricing.perMonth}
                 </div>
               </div>
 
@@ -389,22 +395,16 @@ export function HomeContent({ t }: HomeContentProps) {
         {/* Promo Code Section */}
         <section className="container py-12">
           <div className="max-w-md mx-auto bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center">
-            <h3 className="text-xl font-semibold text-white mb-4">{t.promo.title}</h3>
-            <div className="flex gap-2">
-              <input
-                type="text"
-                placeholder={t.promo.placeholder}
-                value={promoCode}
-                onChange={(e) => setPromoCode(e.target.value)}
-                className="flex-1 bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-brand-green"
-              />
-              <button className="bg-brand-green text-neutral-dark font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition">
-                {t.promo.apply}
-              </button>
-            </div>
-            <p className="text-white/60 text-sm mt-3">
+            <h3 className="text-xl font-semibold text-white mb-2">{t.promo.title}</h3>
+            <p className="text-white/70 text-sm mb-4">
               {t.promo.description}
             </p>
+            <a
+              href="https://app.gofidely.com/register"
+              className="inline-block bg-brand-green text-neutral-dark font-semibold px-6 py-3 rounded-full hover:opacity-90 transition"
+            >
+              {t.promo.cta}
+            </a>
           </div>
         </section>
 
@@ -520,7 +520,7 @@ export function HomeContent({ t }: HomeContentProps) {
         </section>
       </main>
 
-      {/* Video Modal */}
+      {/* Video Modal - commented until video is ready
       {videoModalOpen && (
         <div
           className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
@@ -546,6 +546,7 @@ export function HomeContent({ t }: HomeContentProps) {
           </div>
         </div>
       )}
+      */}
     </>
   );
 }

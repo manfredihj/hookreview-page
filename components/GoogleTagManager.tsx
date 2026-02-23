@@ -25,7 +25,7 @@ function GoogleTagManagerInner() {
         j.async = true;
         j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-PJ83S5F9');
+      })(window, document, 'script', 'dataLayer', 'GTM-NWFMKJWB');
     }
   }, []);
 
@@ -42,7 +42,7 @@ function GoogleTagManagerInner() {
   return (
     <noscript>
       <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-PJ83S5F9"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NWFMKJWB"
         height="0"
         width="0"
         style={{ display: 'none', visibility: 'hidden' }}

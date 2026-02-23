@@ -2,13 +2,13 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://hookflow-landing-page.vercel.app'),
+  metadataBase: new URL('https://gofidely.com'),
   title: {
-    default: "gofidely — Agentes de IA para crecer",
+    default: "gofidely — Convierte clientes felices en reseñas 5 estrellas",
     template: "%s | gofidely"
   },
-  description: "Automatiza tu atención y aumenta ventas con IA. Agentes conversacionales para WhatsApp, Instagram y Facebook.",
-  keywords: ["IA", "chatbot", "WhatsApp", "automatización", "ventas", "ecommerce", "carritos abandonados"],
+  description: "Automatiza la recolección de reseñas en Google. Códigos QR personalizados, dashboard inteligente y más reseñas positivas para tu negocio.",
+  keywords: ["reseñas Google", "Google reviews", "QR code reviews", "reputación online", "reseñas restaurantes", "reseñas negocios locales", "feedback clientes", "5 estrellas"],
   authors: [{ name: "gofidely" }],
   creator: "gofidely",
   publisher: "gofidely",
@@ -16,23 +16,23 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://hookflow-landing-page.vercel.app",
+    url: "https://gofidely.com",
     siteName: "gofidely",
-    title: "gofidely — Agentes de IA para crecer",
-    description: "Automatiza tu atención y aumenta ventas con IA. Agentes conversacionales para WhatsApp, Instagram y Facebook.",
+    title: "gofidely — Convierte clientes felices en reseñas 5 estrellas",
+    description: "Automatiza la recolección de reseñas en Google. Códigos QR personalizados, dashboard inteligente y más reseñas positivas para tu negocio.",
     images: [
       {
         url: "/logo-white.png",
         width: 1200,
         height: 630,
-        alt: "gofidely",
+        alt: "gofidely - Reseñas en Google automatizadas",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "gofidely — Agentes de IA para crecer",
-    description: "Automatiza tu atención y aumenta ventas con IA. Agentes conversacionales para WhatsApp, Instagram y Facebook.",
+    title: "gofidely — Convierte clientes felices en reseñas 5 estrellas",
+    description: "Automatiza la recolección de reseñas en Google. Códigos QR personalizados, dashboard inteligente y más reseñas positivas para tu negocio.",
     images: ["/logo-white.png"],
   },
   robots: {
