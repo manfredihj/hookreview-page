@@ -28,17 +28,14 @@ export function HomeContent({ t }: HomeContentProps) {
             >
               {t.hero.cta}
             </a>
-            {/* Video button - commented until video is ready
-            <button
-              onClick={() => setVideoModalOpen(true)}
-              className="flex items-center gap-2 text-white font-semibold px-6 py-4 rounded-full border border-white/30 hover:bg-white/10 transition"
+            <a
+              href="https://cal.com/julian-manfredi/gofidely-sales"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-pink-500 text-white font-bold px-8 py-4 rounded-full hover:bg-pink-600 transition text-lg"
             >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-              </svg>
-              {t.hero.watchVideo}
-            </button>
-            */}
+              {t.hero.scheduleCall}
+            </a>
           </div>
 
           <p className="text-white/60 text-sm">
