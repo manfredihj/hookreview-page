@@ -385,23 +385,15 @@ export function HomeContent({ t }: HomeContentProps) {
               <p className="text-center text-white/50 text-xs mt-4">
                 {t.pricing.cardRequired}
               </p>
-            </div>
-          </div>
-        </section>
 
-        {/* Promo Code Section */}
-        <section className="container py-12">
-          <div className="max-w-md mx-auto bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center">
-            <h3 className="text-xl font-semibold text-white mb-2">{t.promo.title}</h3>
-            <p className="text-white/70 text-sm mb-4">
-              {t.promo.description}
-            </p>
-            <a
-              href="https://app.gofidely.com/register"
-              className="inline-block bg-brand-green text-neutral-dark font-semibold px-6 py-3 rounded-full hover:opacity-90 transition"
-            >
-              {t.promo.cta}
-            </a>
+              {/* Promo Code */}
+              <div className="mt-6 pt-6 border-t border-white/20">
+                <h4 className="text-lg font-semibold text-white mb-2">{t.promo.title}</h4>
+                <p className="text-white/70 text-sm">
+                  {t.promo.description}
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
