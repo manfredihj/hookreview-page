@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { FacebookPixel } from "@/components/FacebookPixel";
 import { GoogleTagManager } from "@/components/GoogleTagManager";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { locales, localeToLang, isValidLocale, type Locale } from "@/lib/i18n/config";
 
@@ -38,6 +39,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         {children}
         <WhatsAppButton />
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );

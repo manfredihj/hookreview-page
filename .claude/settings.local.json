@@ -7,7 +7,8 @@
       "Bash(dir /B appblog)",
       "Bash(del \"c:\\workspace-node\\hookflow-landing-page\\components\\sections\\SimplePricing.tsx\")",
       "Bash(dir:*)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(npm i:*)"
     ],
     "deny": [],
     "ask": []
