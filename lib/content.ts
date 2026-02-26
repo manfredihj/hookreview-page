@@ -37,6 +37,8 @@ export const LANDINGS: Record<string, Landing> = {
     description: "Convertí cada cliente satisfecho en una reseña positiva en Google. QR en mesa, seguimiento automático y más visibilidad para tu local.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
+    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoTitle: "Mirá cómo funciona",
     niche: "restaurants",
     fbEventParams: {
       content_name: "Landing Restaurantes",
@@ -71,9 +73,9 @@ export const LANDINGS: Record<string, Landing> = {
       {
         name: "Growth",
         price: "USD 119/mes",
-        description: "1 sucursal • 800 reseñas/mes",
+        description: "3 sucursales • 800 reseñas/mes",
         features: [
-          "1 sucursal",
+          "3 sucursales",
           "800 reseñas/mes",
           "QRs ilimitados por empleado",
           "Dashboard avanzado",
@@ -104,6 +106,8 @@ export const LANDINGS: Record<string, Landing> = {
     description: "Tus clientes felices son tu mejor publicidad. Convertí cada corte perfecto en una reseña en Google automáticamente.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
+    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoTitle: "Mirá cómo funciona",
     niche: "hair_salons",
     fbEventParams: {
       content_name: "Landing Peluquerías",
@@ -138,9 +142,9 @@ export const LANDINGS: Record<string, Landing> = {
       {
         name: "Growth",
         price: "USD 119/mes",
-        description: "1 sucursal • 800 reseñas/mes",
+        description: "3 sucursales • 800 reseñas/mes",
         features: [
-          "1 sucursal",
+          "3 sucursales",
           "800 reseñas/mes",
           "QRs ilimitados por estilista",
           "Ranking por estilista",
@@ -170,6 +174,8 @@ export const LANDINGS: Record<string, Landing> = {
     description: "El 84% de los pacientes leen reseñas antes de elegir un profesional de salud. Conseguí más reseñas 5 estrellas de forma automática.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
+    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoTitle: "Mirá cómo funciona",
     niche: "clinics",
     fbEventParams: {
       content_name: "Landing Clínicas",
@@ -204,9 +210,9 @@ export const LANDINGS: Record<string, Landing> = {
       {
         name: "Growth",
         price: "USD 119/mes",
-        description: "1 sucursal • 800 reseñas/mes",
+        description: "3 sucursales • 800 reseñas/mes",
         features: [
-          "1 clínica",
+          "3 clínicas",
           "800 reseñas/mes",
           "QRs ilimitados por profesional",
           "Dashboard por profesional",
@@ -236,6 +242,8 @@ export const LANDINGS: Record<string, Landing> = {
     description: "Los gimnasios con mejores reseñas atraen más inscripciones. Automatizá la recolección de reseñas de tus miembros satisfechos.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
+    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoTitle: "Mirá cómo funciona",
     niche: "gyms",
     fbEventParams: {
       content_name: "Landing Gimnasios",
@@ -270,9 +278,9 @@ export const LANDINGS: Record<string, Landing> = {
       {
         name: "Growth",
         price: "USD 119/mes",
-        description: "1 sucursal • 800 reseñas/mes",
+        description: "3 sucursales • 800 reseñas/mes",
         features: [
-          "1 sede",
+          "3 sedes",
           "800 reseñas/mes",
           "QRs ilimitados por instructor",
           "Ranking por instructor",
@@ -302,6 +310,8 @@ export const LANDINGS: Record<string, Landing> = {
     description: "El 93% de los viajeros leen reseñas antes de reservar. Conseguí más reseñas positivas de tus huéspedes satisfechos.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
+    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoTitle: "Mirá cómo funciona",
     niche: "hotels",
     fbEventParams: {
       content_name: "Landing Hoteles",
@@ -336,9 +346,9 @@ export const LANDINGS: Record<string, Landing> = {
       {
         name: "Growth",
         price: "USD 119/mes",
-        description: "1 sucursal • 800 reseñas/mes",
+        description: "3 sucursales • 800 reseñas/mes",
         features: [
-          "1 propiedad",
+          "3 propiedades",
           "800 reseñas/mes",
           "QRs ilimitados",
           "Múltiples plataformas",
@@ -368,6 +378,8 @@ export const LANDINGS: Record<string, Landing> = {
     description: "La confianza es clave en el rubro automotor. Conseguí más reseñas 5 estrellas y diferenciáte de la competencia.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
+    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoTitle: "Mirá cómo funciona",
     niche: "auto_shops",
     fbEventParams: {
       content_name: "Landing Talleres",
@@ -402,9 +414,9 @@ export const LANDINGS: Record<string, Landing> = {
       {
         name: "Growth",
         price: "USD 119/mes",
-        description: "1 sucursal • 800 reseñas/mes",
+        description: "3 sucursales • 800 reseñas/mes",
         features: [
-          "1 taller",
+          "3 talleres",
           "800 reseñas/mes",
           "QRs ilimitados por mecánico",
           "Ranking por mecánico",
@@ -434,6 +446,8 @@ export const LANDINGS: Record<string, Landing> = {
     description: "La experiencia de bienestar empieza antes de la visita. Conseguí más reseñas 5 estrellas y atraé nuevos clientes.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
+    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoTitle: "Mirá cómo funciona",
     niche: "spas",
     fbEventParams: {
       content_name: "Landing Spas",
@@ -468,9 +482,9 @@ export const LANDINGS: Record<string, Landing> = {
       {
         name: "Growth",
         price: "USD 119/mes",
-        description: "1 sucursal • 800 reseñas/mes",
+        description: "3 sucursales • 800 reseñas/mes",
         features: [
-          "1 spa",
+          "3 spas",
           "800 reseñas/mes",
           "QRs ilimitados por terapeuta",
           "Ranking por terapeuta",
@@ -500,6 +514,8 @@ export const LANDINGS: Record<string, Landing> = {
     description: "El 78% de los dueños de mascotas leen reseñas antes de elegir veterinaria. Conseguí más reseñas 5 estrellas de clientes satisfechos.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
+    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoTitle: "Mirá cómo funciona",
     niche: "veterinary",
     fbEventParams: {
       content_name: "Landing Veterinarias",
@@ -534,9 +550,9 @@ export const LANDINGS: Record<string, Landing> = {
       {
         name: "Growth",
         price: "USD 119/mes",
-        description: "1 sucursal • 800 reseñas/mes",
+        description: "3 sucursales • 800 reseñas/mes",
         features: [
-          "1 veterinaria",
+          "3 veterinarias",
           "800 reseñas/mes",
           "QRs ilimitados por veterinario",
           "Ranking por veterinario",

@@ -1,6 +1,7 @@
 "use client";
 
 import type { Dictionary } from "@/lib/i18n/dictionaries";
+import { VSL } from "./VSL";
 
 interface HomeContentProps {
   t: Dictionary;
@@ -42,6 +43,12 @@ export function HomeContent({ t }: HomeContentProps) {
             {t.hero.cancelAnytime}
           </p>
         </section>
+
+        {/* Video Demo */}
+        <VSL
+          videoUrl="https://gofidely.wistia.com/medias/4kufh6ejqv"
+          title="Mirá cómo funciona en 2 minutos"
+        />
 
         {/* Video Demo Section - commented until video is ready
         <section className="container py-16">

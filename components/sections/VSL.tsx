@@ -38,6 +38,19 @@ export function VSL({ videoUrl, title }: VSLProps) {
       };
     }
 
+    // Wistia
+    const wistiaRegExp = /wistia\.com\/medias\/([a-zA-Z0-9]+)/;
+    const wistiaMatch = url.match(wistiaRegExp);
+    if (wistiaMatch && wistiaMatch[1]) {
+      return {
+        type: 'wistia' as const,
+        id: wistiaMatch[1],
+        embedUrl: `https://fast.wistia.net/embed/iframe/${wistiaMatch[1]}?autoplay=1`,
+        thumbnailUrl: `https://fast.wistia.net/embed/medias/${wistiaMatch[1]}/swatch`,
+        useFacade: false // Wistia carga directo
+      };
+    }
+
     return null;
   };
 
