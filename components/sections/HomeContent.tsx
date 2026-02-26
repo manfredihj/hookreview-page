@@ -382,83 +382,88 @@ export function HomeContent({ t }: HomeContentProps) {
             </div>
           ) : (
             /* Single plan pricing (MX, EN) */
-            <div className="max-w-md mx-auto">
-              <div className="bg-gradient-to-br from-brand-green/10 to-transparent border-2 border-brand-green rounded-2xl p-8">
-                <div className="text-center mb-6">
-                  <span className="inline-block bg-brand-green text-neutral-dark text-sm font-bold px-3 py-1 rounded-full mb-3">
-                    {t.pricing.promoTag}
-                  </span>
-                  <div className="text-5xl font-bold text-white mb-2">
-                    {t.pricing.price}<span className="text-xl font-normal text-white/60">{t.pricing.perMonth}</span>
-                  </div>
-                  <div className="text-white/50 line-through text-lg">
-                    {t.pricing.originalPrice}{t.pricing.perMonth}
+            (() => {
+              const pricing = t.pricing as { promoTag: string; price: string; originalPrice: string; perMonth: string; feature1: string; feature2: string; feature3: string; feature4: string; feature5: string; feature6: string; additionalBranch: string; cta: string; cardRequired: string };
+              return (
+                <div className="max-w-md mx-auto">
+                  <div className="bg-gradient-to-br from-brand-green/10 to-transparent border-2 border-brand-green rounded-2xl p-8">
+                    <div className="text-center mb-6">
+                      <span className="inline-block bg-brand-green text-neutral-dark text-sm font-bold px-3 py-1 rounded-full mb-3">
+                        {pricing.promoTag}
+                      </span>
+                      <div className="text-5xl font-bold text-white mb-2">
+                        {pricing.price}<span className="text-xl font-normal text-white/60">{pricing.perMonth}</span>
+                      </div>
+                      <div className="text-white/50 line-through text-lg">
+                        {pricing.originalPrice}{pricing.perMonth}
+                      </div>
+                    </div>
+
+                    <ul className="space-y-3 mb-8">
+                      <li className="flex items-center gap-3 text-white/80">
+                        <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        {pricing.feature1}
+                      </li>
+                      <li className="flex items-center gap-3 text-white/80">
+                        <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        {pricing.feature2}
+                      </li>
+                      <li className="flex items-center gap-3 text-white/80">
+                        <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        {pricing.feature3}
+                      </li>
+                      <li className="flex items-center gap-3 text-white/80">
+                        <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        {pricing.feature4}
+                      </li>
+                      <li className="flex items-center gap-3 text-white/80">
+                        <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        {pricing.feature5}
+                      </li>
+                      <li className="flex items-center gap-3 text-white/80">
+                        <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        {pricing.feature6}
+                      </li>
+                    </ul>
+
+                    <p className="text-center text-white/60 text-sm mb-6">
+                      {pricing.additionalBranch}
+                    </p>
+
+                    <a
+                      href="https://app.gofidely.com/register"
+                      className="block w-full bg-brand-green text-neutral-dark font-bold py-4 rounded-full hover:opacity-90 transition text-center text-lg"
+                    >
+                      {pricing.cta}
+                    </a>
+
+                    <p className="text-center text-white/50 text-xs mt-4">
+                      {pricing.cardRequired}
+                    </p>
+
+                    {/* Promo Code */}
+                    <div className="mt-6 pt-6 border-t border-white/20">
+                      <h4 className="text-lg font-semibold text-white mb-2">{t.promo.title}</h4>
+                      <p className="text-white/70 text-sm">
+                        {t.promo.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
-
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center gap-3 text-white/80">
-                    <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    {t.pricing.feature1}
-                  </li>
-                  <li className="flex items-center gap-3 text-white/80">
-                    <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    {t.pricing.feature2}
-                  </li>
-                  <li className="flex items-center gap-3 text-white/80">
-                    <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    {t.pricing.feature3}
-                  </li>
-                  <li className="flex items-center gap-3 text-white/80">
-                    <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    {t.pricing.feature4}
-                  </li>
-                  <li className="flex items-center gap-3 text-white/80">
-                    <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    {t.pricing.feature5}
-                  </li>
-                  <li className="flex items-center gap-3 text-white/80">
-                    <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    {t.pricing.feature6}
-                  </li>
-                </ul>
-
-                <p className="text-center text-white/60 text-sm mb-6">
-                  {t.pricing.additionalBranch}
-                </p>
-
-                <a
-                  href="https://app.gofidely.com/register"
-                  className="block w-full bg-brand-green text-neutral-dark font-bold py-4 rounded-full hover:opacity-90 transition text-center text-lg"
-                >
-                  {t.pricing.cta}
-                </a>
-
-                <p className="text-center text-white/50 text-xs mt-4">
-                  {t.pricing.cardRequired}
-                </p>
-
-                {/* Promo Code */}
-                <div className="mt-6 pt-6 border-t border-white/20">
-                  <h4 className="text-lg font-semibold text-white mb-2">{t.promo.title}</h4>
-                  <p className="text-white/70 text-sm">
-                    {t.promo.description}
-                  </p>
-                </div>
-              </div>
-            </div>
+              );
+            })()
           )}
 
           {'tiers' in t.pricing && (
