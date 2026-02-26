@@ -78,21 +78,55 @@
   },
   "pricing": {
     "title": "Empezá hoy",
-    "subtitle": "Plan Lanzamiento Argentina • Planes desde USD $59/mes",
-    "promoTag": "30% OFF por 6 meses",
-    "price": "USD 41",
-    "originalPrice": "USD 59",
+    "subtitle": "Plan Lanzamiento Argentina • Planes desde $79.000/mes",
     "perMonth": "/mes",
-    "feature1": "1 sucursal",
-    "feature2": "Hasta 200 reseñas",
-    "feature3": "QRs ilimitados",
-    "feature4": "Dashboard completo",
-    "feature5": "Tracking y métricas",
-    "additionalBranch": "Sucursal adicional: USD 19/mes",
-    "additionalBranchOriginal": "(antes USD 19/mes)",
     "cta": "Probar ahora",
     "cardRequired": "Requiere tarjeta. Cancelás antes del día 14 y no se cobra.",
-    "promoNote": "Promoción válida por 6 meses. Después se aplica el precio regular."
+    "tiers": [
+      {
+        "name": "Starter",
+        "price": "$79.000",
+        "description": "1 sucursal • Hasta 200 reseñas",
+        "features": [
+          "1 sucursal",
+          "Hasta 200 reseñas",
+          "QR ilimitados",
+          "Dashboard completo",
+          "Filtro inteligente de experiencias",
+          "Base de datos clientes"
+        ],
+        "cta": "14 días gratis"
+      },
+      {
+        "name": "Growth",
+        "price": "$159.000",
+        "description": "Hasta 3 sucursales • Hasta 800 reseñas",
+        "features": [
+          "Hasta 3 sucursales",
+          "Hasta 800 reseñas",
+          "QR por empleado",
+          "Ranking de desempeño",
+          "Dashboard avanzado",
+          "Soporte prioritario"
+        ],
+        "cta": "14 días gratis",
+        "highlighted": true,
+        "tag": "Más elegido"
+      },
+      {
+        "name": "Scale",
+        "price": "$269.000",
+        "description": "Hasta 10 sucursales • Reseñas ilimitadas",
+        "features": [
+          "Hasta 10 sucursales",
+          "Reseñas ilimitadas (uso razonable)",
+          "Comparativa entre sucursales",
+          "API e integraciones",
+          "Soporte dedicado"
+        ],
+        "cta": "14 días gratis"
+      }
+    ]
   },
   "promo": {
     "title": "¿Tenés un código de partner?",

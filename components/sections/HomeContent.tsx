@@ -331,77 +331,141 @@ export function HomeContent({ t }: HomeContentProps) {
           </h2>
           <p className="text-white/70 text-center mb-12">{t.pricing.subtitle}</p>
 
-          <div className="max-w-md mx-auto">
-            <div className="bg-gradient-to-br from-brand-green/10 to-transparent border-2 border-brand-green rounded-2xl p-8">
-              <div className="text-center mb-6">
-                <span className="inline-block bg-brand-green text-neutral-dark text-sm font-bold px-3 py-1 rounded-full mb-3">
-                  {t.pricing.promoTag}
-                </span>
-                <div className="text-5xl font-bold text-white mb-2">
-                  {t.pricing.price}<span className="text-xl font-normal text-white/60">{t.pricing.perMonth}</span>
+          {/* Multi-tier pricing (Argentina) */}
+          {t.pricing.tiers ? (
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {t.pricing.tiers.map((tier: { name: string; price: string; description: string; features: string[]; cta: string; highlighted?: boolean; tag?: string }, index: number) => (
+                <div
+                  key={index}
+                  className={`rounded-2xl p-6 ${
+                    tier.highlighted
+                      ? "bg-gradient-to-br from-brand-green/10 to-transparent border-2 border-brand-green"
+                      : "bg-white/10 backdrop-blur-sm border border-white/20"
+                  }`}
+                >
+                  <div className="text-center mb-6">
+                    {tier.tag && (
+                      <span className="inline-block bg-brand-green text-neutral-dark text-xs font-bold px-3 py-1 rounded-full mb-3">
+                        {tier.tag}
+                      </span>
+                    )}
+                    <h3 className="text-xl font-bold text-white mb-2">{tier.name}</h3>
+                    <div className="text-4xl font-bold text-white mb-1">
+                      {tier.price}<span className="text-lg font-normal text-white/60">{t.pricing.perMonth}</span>
+                    </div>
+                    <p className="text-white/60 text-sm">{tier.description}</p>
+                  </div>
+
+                  <ul className="space-y-3 mb-6">
+                    {tier.features.map((feature: string, fIndex: number) => (
+                      <li key={fIndex} className="flex items-center gap-3 text-white/80 text-sm">
+                        <svg className="w-4 h-4 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <a
+                    href="https://app.gofidely.com/register"
+                    className={`block w-full font-bold py-3 rounded-full transition text-center ${
+                      tier.highlighted
+                        ? "bg-brand-green text-neutral-dark hover:opacity-90"
+                        : "bg-white/20 text-white hover:bg-white/30"
+                    }`}
+                  >
+                    {tier.cta}
+                  </a>
                 </div>
-                <div className="text-white/50 line-through text-lg">
-                  {t.pricing.originalPrice}{t.pricing.perMonth}
+              ))}
+            </div>
+          ) : (
+            /* Single plan pricing (MX, EN) */
+            <div className="max-w-md mx-auto">
+              <div className="bg-gradient-to-br from-brand-green/10 to-transparent border-2 border-brand-green rounded-2xl p-8">
+                <div className="text-center mb-6">
+                  <span className="inline-block bg-brand-green text-neutral-dark text-sm font-bold px-3 py-1 rounded-full mb-3">
+                    {t.pricing.promoTag}
+                  </span>
+                  <div className="text-5xl font-bold text-white mb-2">
+                    {t.pricing.price}<span className="text-xl font-normal text-white/60">{t.pricing.perMonth}</span>
+                  </div>
+                  <div className="text-white/50 line-through text-lg">
+                    {t.pricing.originalPrice}{t.pricing.perMonth}
+                  </div>
                 </div>
-              </div>
 
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-center gap-3 text-white/80">
-                  <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  {t.pricing.feature1}
-                </li>
-                <li className="flex items-center gap-3 text-white/80">
-                  <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  {t.pricing.feature2}
-                </li>
-                <li className="flex items-center gap-3 text-white/80">
-                  <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  {t.pricing.feature3}
-                </li>
-                <li className="flex items-center gap-3 text-white/80">
-                  <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  {t.pricing.feature4}
-                </li>
-                <li className="flex items-center gap-3 text-white/80">
-                  <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  {t.pricing.feature5}
-                </li>
-              </ul>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-center gap-3 text-white/80">
+                    <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    {t.pricing.feature1}
+                  </li>
+                  <li className="flex items-center gap-3 text-white/80">
+                    <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    {t.pricing.feature2}
+                  </li>
+                  <li className="flex items-center gap-3 text-white/80">
+                    <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    {t.pricing.feature3}
+                  </li>
+                  <li className="flex items-center gap-3 text-white/80">
+                    <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    {t.pricing.feature4}
+                  </li>
+                  <li className="flex items-center gap-3 text-white/80">
+                    <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    {t.pricing.feature5}
+                  </li>
+                  <li className="flex items-center gap-3 text-white/80">
+                    <svg className="w-5 h-5 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    {t.pricing.feature6}
+                  </li>
+                </ul>
 
-              <p className="text-center text-white/60 text-sm mb-6">
-                {t.pricing.additionalBranch}
-              </p>
-
-              <a
-                href="https://app.gofidely.com/register"
-                className="block w-full bg-brand-green text-neutral-dark font-bold py-4 rounded-full hover:opacity-90 transition text-center text-lg"
-              >
-                {t.pricing.cta}
-              </a>
-
-              <p className="text-center text-white/50 text-xs mt-4">
-                {t.pricing.cardRequired}
-              </p>
-
-              {/* Promo Code */}
-              <div className="mt-6 pt-6 border-t border-white/20">
-                <h4 className="text-lg font-semibold text-white mb-2">{t.promo.title}</h4>
-                <p className="text-white/70 text-sm">
-                  {t.promo.description}
+                <p className="text-center text-white/60 text-sm mb-6">
+                  {t.pricing.additionalBranch}
                 </p>
+
+                <a
+                  href="https://app.gofidely.com/register"
+                  className="block w-full bg-brand-green text-neutral-dark font-bold py-4 rounded-full hover:opacity-90 transition text-center text-lg"
+                >
+                  {t.pricing.cta}
+                </a>
+
+                <p className="text-center text-white/50 text-xs mt-4">
+                  {t.pricing.cardRequired}
+                </p>
+
+                {/* Promo Code */}
+                <div className="mt-6 pt-6 border-t border-white/20">
+                  <h4 className="text-lg font-semibold text-white mb-2">{t.promo.title}</h4>
+                  <p className="text-white/70 text-sm">
+                    {t.promo.description}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          )}
+
+          {t.pricing.tiers && (
+            <p className="text-center text-white/50 text-sm mt-6">
+              {t.pricing.cardRequired}
+            </p>
+          )}
         </section>
 
         {/* FAQ Section */}
