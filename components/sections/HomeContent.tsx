@@ -332,9 +332,9 @@ export function HomeContent({ t }: HomeContentProps) {
           <p className="text-white/70 text-center mb-12">{t.pricing.subtitle}</p>
 
           {/* Multi-tier pricing (Argentina) */}
-          {t.pricing.tiers ? (
+          {'tiers' in t.pricing && t.pricing.tiers ? (
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              {t.pricing.tiers.map((tier: { name: string; price: string; description: string; features: string[]; cta: string; highlighted?: boolean; tag?: string }, index: number) => (
+              {(t.pricing.tiers as Array<{ name: string; price: string; description: string; features: string[]; cta: string; highlighted?: boolean; tag?: string }>).map((tier, index) => (
                 <div
                   key={index}
                   className={`rounded-2xl p-6 ${
@@ -461,7 +461,7 @@ export function HomeContent({ t }: HomeContentProps) {
             </div>
           )}
 
-          {t.pricing.tiers && (
+          {'tiers' in t.pricing && (
             <p className="text-center text-white/50 text-sm mt-6">
               {t.pricing.cardRequired}
             </p>
