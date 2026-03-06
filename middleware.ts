@@ -47,6 +47,8 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
+    // Match root path
+    '/',
     // Match all paths except static files, api routes, and special Next.js paths
     '/((?!_next/static|_next/image|favicon.ico|.*\\..*|api|sitemap.xml).*)',
   ],
