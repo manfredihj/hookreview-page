@@ -46,7 +46,7 @@ export function HomeContent({ t }: HomeContentProps) {
 
         {/* Video Demo */}
         <VSL
-          videoUrl="https://gofidely.wistia.com/medias/4kufh6ejqv"
+          videoUrl="https://gofidely.wistia.com/medias/yi4lczwsz7"
           title="Mirá cómo funciona en 2 minutos"
         />
 

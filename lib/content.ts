@@ -37,7 +37,7 @@ export const LANDINGS: Record<string, Landing> = {
     description: "Convertí cada cliente satisfecho en una reseña positiva en Google. QR en mesa, seguimiento automático y más visibilidad para tu local.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
-    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "restaurants",
     fbEventParams: {
@@ -106,7 +106,7 @@ export const LANDINGS: Record<string, Landing> = {
     description: "Tus clientes felices son tu mejor publicidad. Convertí cada corte perfecto en una reseña en Google automáticamente.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
-    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "hair_salons",
     fbEventParams: {
@@ -174,7 +174,7 @@ export const LANDINGS: Record<string, Landing> = {
     description: "El 84% de los pacientes leen reseñas antes de elegir un profesional de salud. Conseguí más reseñas 5 estrellas de forma automática.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
-    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "clinics",
     fbEventParams: {
@@ -242,7 +242,7 @@ export const LANDINGS: Record<string, Landing> = {
     description: "Los gimnasios con mejores reseñas atraen más inscripciones. Automatizá la recolección de reseñas de tus miembros satisfechos.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
-    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "gyms",
     fbEventParams: {
@@ -310,7 +310,7 @@ export const LANDINGS: Record<string, Landing> = {
     description: "El 93% de los viajeros leen reseñas antes de reservar. Conseguí más reseñas positivas de tus huéspedes satisfechos.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
-    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "hotels",
     fbEventParams: {
@@ -378,7 +378,7 @@ export const LANDINGS: Record<string, Landing> = {
     description: "La confianza es clave en el rubro automotor. Conseguí más reseñas 5 estrellas y diferenciáte de la competencia.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
-    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "auto_shops",
     fbEventParams: {
@@ -446,7 +446,7 @@ export const LANDINGS: Record<string, Landing> = {
     description: "La experiencia de bienestar empieza antes de la visita. Conseguí más reseñas 5 estrellas y atraé nuevos clientes.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
-    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "spas",
     fbEventParams: {
@@ -514,7 +514,7 @@ export const LANDINGS: Record<string, Landing> = {
     description: "El 78% de los dueños de mascotas leen reseñas antes de elegir veterinaria. Conseguí más reseñas 5 estrellas de clientes satisfechos.",
     cta: "Probar ahora",
     calLink: "https://cal.com/gofidely/demo",
-    videoUrl: "https://gofidely.wistia.com/medias/4kufh6ejqv",
+    videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "veterinary",
     fbEventParams: {
