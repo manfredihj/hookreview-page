@@ -19,7 +19,7 @@ export function Hero({ title, description, cta, calLink }: HeroProps) {
             {cta}
           </CalButton>
         ) : (
-          <CalButton calLink="https://cal.com/julian-manfredi/agentes-ia-reunion-descubrimiento" size="lg">
+          <CalButton calLink="https://cal.com/julian-manfredi/gofidely-sales" size="lg">
             {cta}
           </CalButton>
         )}

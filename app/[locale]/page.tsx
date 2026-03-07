@@ -4,6 +4,7 @@ import { Footer } from "@/components/sections/Footer";
 import { HomeContent } from "@/components/sections/HomeContent";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { isValidLocale, type Locale } from "@/lib/i18n/config";
+import { getVslUrl } from "@/lib/content";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -21,7 +22,7 @@ export default async function Home({ params }: Props) {
   return (
     <>
       <Navbar t={t} locale={locale as Locale} />
-      <HomeContent t={t} />
+      <HomeContent t={t} vslUrl={getVslUrl(locale)} />
       <Footer t={t} />
     </>
   );

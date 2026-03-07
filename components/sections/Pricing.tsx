@@ -18,7 +18,7 @@ interface PricingProps {
   calLink?: string;
 }
 
-export function Pricing({ title = "Planes y Precios", subtitle, tiers, showPrice = true, calLink = "https://cal.com/julian-manfredi/agentes-ia-reunion-descubrimiento" }: PricingProps) {
+export function Pricing({ title = "Planes y Precios", subtitle, tiers, showPrice = true, calLink = "https://cal.com/julian-manfredi/gofidely-sales" }: PricingProps) {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">

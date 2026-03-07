@@ -5,9 +5,10 @@ import { VSL } from "./VSL";
 
 interface HomeContentProps {
   t: Dictionary;
+  vslUrl: string;
 }
 
-export function HomeContent({ t }: HomeContentProps) {
+export function HomeContent({ t, vslUrl }: HomeContentProps) {
 
   return (
     <>
@@ -46,7 +47,7 @@ export function HomeContent({ t }: HomeContentProps) {
 
         {/* Video Demo */}
         <VSL
-          videoUrl="https://gofidely.wistia.com/medias/yi4lczwsz7"
+          videoUrl={vslUrl}
           title="Mirá cómo funciona en 2 minutos"
         />
 

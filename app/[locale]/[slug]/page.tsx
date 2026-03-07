@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getLandingContent } from "@/lib/content";
+import { getLandingContent, getVslUrl } from "@/lib/content";
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
 import { VSL } from "@/components/sections/VSL";
@@ -87,7 +87,7 @@ export default async function LandingPage({ params }: Props) {
         niche={data.niche}
       />
       <Hero title={data.title} description={data.description} cta={data.cta} calLink={data.calLink} />
-      {data.videoUrl && <VSL videoUrl={data.videoUrl} title={data.videoTitle} />}
+      {data.videoUrl && <VSL videoUrl={getVslUrl(locale)} title={data.videoTitle} />}
       <Features items={data.features} />
       {data.pricingTiers && (
         <Pricing

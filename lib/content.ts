@@ -8,6 +8,16 @@ export type PricingTier = {
   highlighted?: boolean;
 };
 
+export const VSL_URLS: Record<string, string> = {
+  en: "https://gofidely.wistia.com/medias/od8lmg8gqo",
+  ar: "https://gofidely.wistia.com/medias/yi4lczwsz7",
+  mx: "https://gofidely.wistia.com/medias/yi4lczwsz7",
+};
+
+export function getVslUrl(locale: string): string {
+  return VSL_URLS[locale] ?? VSL_URLS.mx;
+}
+
 export type Landing = {
   title: string;
   description: string;
@@ -36,7 +46,7 @@ export const LANDINGS: Record<string, Landing> = {
     title: "Conseguí más reseñas 5 estrellas para tu restaurante",
     description: "Convertí cada cliente satisfecho en una reseña positiva en Google. QR en mesa, seguimiento automático y más visibilidad para tu local.",
     cta: "Probar ahora",
-    calLink: "https://cal.com/gofidely/demo",
+    calLink: "https://cal.com/julian-manfredi/gofidely-sales",
     videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "restaurants",
@@ -105,7 +115,7 @@ export const LANDINGS: Record<string, Landing> = {
     title: "Más reseñas 5 estrellas para tu peluquería o barbería",
     description: "Tus clientes felices son tu mejor publicidad. Convertí cada corte perfecto en una reseña en Google automáticamente.",
     cta: "Probar ahora",
-    calLink: "https://cal.com/gofidely/demo",
+    calLink: "https://cal.com/julian-manfredi/gofidely-sales",
     videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "hair_salons",
@@ -173,7 +183,7 @@ export const LANDINGS: Record<string, Landing> = {
     title: "Más pacientes confían en clínicas con buenas reseñas",
     description: "El 84% de los pacientes leen reseñas antes de elegir un profesional de salud. Conseguí más reseñas 5 estrellas de forma automática.",
     cta: "Probar ahora",
-    calLink: "https://cal.com/gofidely/demo",
+    calLink: "https://cal.com/julian-manfredi/gofidely-sales",
     videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "clinics",
@@ -241,7 +251,7 @@ export const LANDINGS: Record<string, Landing> = {
     title: "Conseguí más miembros con reseñas 5 estrellas",
     description: "Los gimnasios con mejores reseñas atraen más inscripciones. Automatizá la recolección de reseñas de tus miembros satisfechos.",
     cta: "Probar ahora",
-    calLink: "https://cal.com/gofidely/demo",
+    calLink: "https://cal.com/julian-manfredi/gofidely-sales",
     videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "gyms",
@@ -309,7 +319,7 @@ export const LANDINGS: Record<string, Landing> = {
     title: "Más reservas directas con reseñas 5 estrellas",
     description: "El 93% de los viajeros leen reseñas antes de reservar. Conseguí más reseñas positivas de tus huéspedes satisfechos.",
     cta: "Probar ahora",
-    calLink: "https://cal.com/gofidely/demo",
+    calLink: "https://cal.com/julian-manfredi/gofidely-sales",
     videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "hotels",
@@ -377,7 +387,7 @@ export const LANDINGS: Record<string, Landing> = {
     title: "Más clientes confían en talleres con buenas reseñas",
     description: "La confianza es clave en el rubro automotor. Conseguí más reseñas 5 estrellas y diferenciáte de la competencia.",
     cta: "Probar ahora",
-    calLink: "https://cal.com/gofidely/demo",
+    calLink: "https://cal.com/julian-manfredi/gofidely-sales",
     videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "auto_shops",
@@ -445,7 +455,7 @@ export const LANDINGS: Record<string, Landing> = {
     title: "Más clientes eligen spas con excelentes reseñas",
     description: "La experiencia de bienestar empieza antes de la visita. Conseguí más reseñas 5 estrellas y atraé nuevos clientes.",
     cta: "Probar ahora",
-    calLink: "https://cal.com/gofidely/demo",
+    calLink: "https://cal.com/julian-manfredi/gofidely-sales",
     videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "spas",
@@ -513,7 +523,7 @@ export const LANDINGS: Record<string, Landing> = {
     title: "Los dueños de mascotas confían en veterinarias con buenas reseñas",
     description: "El 78% de los dueños de mascotas leen reseñas antes de elegir veterinaria. Conseguí más reseñas 5 estrellas de clientes satisfechos.",
     cta: "Probar ahora",
-    calLink: "https://cal.com/gofidely/demo",
+    calLink: "https://cal.com/julian-manfredi/gofidely-sales",
     videoUrl: "https://gofidely.wistia.com/medias/yi4lczwsz7",
     videoTitle: "Mirá cómo funciona",
     niche: "veterinary",
