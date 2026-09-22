@@ -65,7 +65,7 @@ export const LANDINGS: Record<string, Landing> = {
     ctaBlock: { text: "¿Listo para llenar tu perfil de Google de 5 estrellas?", cta: "Probar ahora" },
     showPricing: true,
     pricingTitle: "Planes para restaurantes",
-    pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
+    // pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
     pricingTiers: [
       {
         name: "Starter",
@@ -78,7 +78,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Dashboard completo",
           "Filtro de feedback negativo"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       },
       {
         name: "Growth",
@@ -92,7 +92,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Ranking por empleado",
           "Soporte prioritario"
         ],
-        cta: "14 días gratis",
+        cta: "Comenzar ahora",
         highlighted: true
       },
       {
@@ -107,7 +107,7 @@ export const LANDINGS: Record<string, Landing> = {
           "API e integraciones",
           "Soporte dedicado"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       }
     ]
   },
@@ -134,7 +134,7 @@ export const LANDINGS: Record<string, Landing> = {
     ctaBlock: { text: "¿Querés que cada cliente hable bien de vos en Google?", cta: "Probar ahora" },
     showPricing: true,
     pricingTitle: "Planes para salones de belleza",
-    pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
+    // pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
     pricingTiers: [
       {
         name: "Starter",
@@ -147,7 +147,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Dashboard completo",
           "Filtro de feedback negativo"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       },
       {
         name: "Growth",
@@ -161,7 +161,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Dashboard avanzado",
           "Soporte prioritario"
         ],
-        cta: "14 días gratis",
+        cta: "Comenzar ahora",
         highlighted: true
       },
       {
@@ -175,7 +175,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Reportes consolidados",
           "Soporte dedicado"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       }
     ]
   },
@@ -202,7 +202,7 @@ export const LANDINGS: Record<string, Landing> = {
     ctaBlock: { text: "¿Querés que más pacientes elijan tu clínica?", cta: "Probar ahora" },
     showPricing: true,
     pricingTitle: "Planes para clínicas y consultorios",
-    pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
+    // pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
     pricingTiers: [
       {
         name: "Starter",
@@ -215,7 +215,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Dashboard completo",
           "Alertas de feedback negativo"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       },
       {
         name: "Growth",
@@ -229,7 +229,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Reportes mensuales",
           "Soporte prioritario"
         ],
-        cta: "14 días gratis",
+        cta: "Comenzar ahora",
         highlighted: true
       },
       {
@@ -243,7 +243,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Integraciones",
           "Soporte dedicado"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       }
     ]
   },
@@ -270,7 +270,7 @@ export const LANDINGS: Record<string, Landing> = {
     ctaBlock: { text: "¿Querés que tu gimnasio sea el mejor valorado de la zona?", cta: "Probar ahora" },
     showPricing: true,
     pricingTitle: "Planes para gimnasios y centros fitness",
-    pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
+    // pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
     pricingTiers: [
       {
         name: "Starter",
@@ -283,7 +283,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Dashboard completo",
           "Filtro de feedback negativo"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       },
       {
         name: "Growth",
@@ -297,7 +297,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Dashboard avanzado",
           "Soporte prioritario"
         ],
-        cta: "14 días gratis",
+        cta: "Comenzar ahora",
         highlighted: true
       },
       {
@@ -311,7 +311,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Integraciones con CRM",
           "Soporte dedicado"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       }
     ]
   },
@@ -338,7 +338,7 @@ export const LANDINGS: Record<string, Landing> = {
     ctaBlock: { text: "¿Querés que tu hotel destaque en las búsquedas?", cta: "Probar ahora" },
     showPricing: true,
     pricingTitle: "Planes para hoteles y alojamientos",
-    pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
+    // pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
     pricingTiers: [
       {
         name: "Starter",
@@ -351,7 +351,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Dashboard completo",
           "Google + TripAdvisor"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       },
       {
         name: "Growth",
@@ -365,7 +365,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Alertas en tiempo real",
           "Soporte prioritario"
         ],
-        cta: "14 días gratis",
+        cta: "Comenzar ahora",
         highlighted: true
       },
       {
@@ -379,7 +379,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Integraciones con PMS",
           "Soporte dedicado"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       }
     ]
   },
@@ -406,7 +406,7 @@ export const LANDINGS: Record<string, Landing> = {
     ctaBlock: { text: "¿Querés ser el taller mejor valorado de tu zona?", cta: "Probar ahora" },
     showPricing: true,
     pricingTitle: "Planes para talleres mecánicos",
-    pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
+    // pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
     pricingTiers: [
       {
         name: "Starter",
@@ -419,7 +419,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Dashboard completo",
           "Filtro de feedback negativo"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       },
       {
         name: "Growth",
@@ -433,7 +433,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Dashboard avanzado",
           "Soporte prioritario"
         ],
-        cta: "14 días gratis",
+        cta: "Comenzar ahora",
         highlighted: true
       },
       {
@@ -447,7 +447,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Integraciones con DMS",
           "Soporte dedicado"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       }
     ]
   },
@@ -474,7 +474,7 @@ export const LANDINGS: Record<string, Landing> = {
     ctaBlock: { text: "¿Querés que tu spa sea el mejor valorado?", cta: "Probar ahora" },
     showPricing: true,
     pricingTitle: "Planes para spas y centros de bienestar",
-    pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
+    // pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
     pricingTiers: [
       {
         name: "Starter",
@@ -487,7 +487,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Dashboard completo",
           "Filtro de feedback negativo"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       },
       {
         name: "Growth",
@@ -501,7 +501,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Dashboard avanzado",
           "Soporte prioritario"
         ],
-        cta: "14 días gratis",
+        cta: "Comenzar ahora",
         highlighted: true
       },
       {
@@ -515,7 +515,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Branding personalizado",
           "Soporte dedicado"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       }
     ]
   },
@@ -542,7 +542,7 @@ export const LANDINGS: Record<string, Landing> = {
     ctaBlock: { text: "¿Querés ser la veterinaria mejor valorada de la zona?", cta: "Probar ahora" },
     showPricing: true,
     pricingTitle: "Planes para veterinarias",
-    pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
+    // pricingSubtitle: "14 días de prueba gratis. Cancelás cuando quieras.",
     pricingTiers: [
       {
         name: "Starter",
@@ -555,7 +555,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Dashboard completo",
           "Filtro de feedback negativo"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       },
       {
         name: "Growth",
@@ -569,7 +569,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Dashboard avanzado",
           "Soporte prioritario"
         ],
-        cta: "14 días gratis",
+        cta: "Comenzar ahora",
         highlighted: true
       },
       {
@@ -583,7 +583,7 @@ export const LANDINGS: Record<string, Landing> = {
           "Integraciones",
           "Soporte dedicado"
         ],
-        cta: "14 días gratis"
+        cta: "Comenzar ahora"
       }
     ]
   }
